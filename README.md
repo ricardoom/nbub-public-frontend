@@ -1,4 +1,4 @@
-# Native Bound Undbound Frontend
+# Native Bound Unbound Frontend
 
 This is the repository for the public facing website
 
