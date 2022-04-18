@@ -1,0 +1,18 @@
+baseURL = 'https://nativeboundunbound.org/'
+languageCode = 'en-us'
+title = 'Native Bound Unbound'
+theme = 'nbubTheme'
+copyright = 'All rights reserved Native Bound Unbound'
+
+[params]
+  author = ''
+
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = -1
+  [[menu.main]]
+    name = 'About'
+    url = '/about/'
+    weight = 10
