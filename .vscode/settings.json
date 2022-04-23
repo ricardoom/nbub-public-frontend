@@ -1,6 +1,7 @@
 {
   "conventionalCommits.scopes": [
     "content",
-    "global"
+    "global",
+    "theme"
   ]
 }
