@@ -1,7 +1,7 @@
 baseURL = 'https://nativeboundunbound.org/'
 languageCode = 'en-us'
-title = 'Native Bound Unbound'
-theme = 'nbubTheme'
+title = 'Native Bound—Unbound'
+theme = 'hugOpenProps'
 copyright = 'All rights reserved Native Bound Unbound'
 
 [params]
