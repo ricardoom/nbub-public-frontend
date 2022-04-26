@@ -1,21 +1,10 @@
 ---
-title: 'bobo project'
+title: 'Native Bound Unbound Home'
 draft: false
 
 ---
+There is no way to measure the impact of slavery upon the Indigenous people of the Americas. Yet, it is known that many millions of people were captured and bound, each life worth remembering. While the practice predated the arrival of Europeans in the Americas, and would continue across tribal communities for centuries, Indigenous slavery expanded in unimaginable ways following the arrival of Columbus in 1492.
 
-Pariatur Lorem reprehenderit ut sunt ex nulla exercitation excepteur amet esse. Mollit non ullamco esse sunt cupidatat officia in id mollit est pariatur. Ut eiusmod eiusmod in pariatur dolore. Ut mollit ipsum nostrud aute culpa qui enim voluptate. Nulla nisi fugiat aute elit enim. Duis anim tempor labore adipisicing mollit laboris fugiat deserunt mollit est do.
+In spite of the fact that this history has been obscured, its imprints remain bound in archival documents, archaeological artifacts, scholarly monographs and the delicacy and strength of family memories, all of which reveal the profound arc of individual lives that shaped families and entire communities.
 
-Laboris tempor in eiusmod eiusmod non sunt qui sit. Pariatur deserunt amet et nostrud tempor qui nostrud enim nisi excepteur labore. Qui cillum excepteur exercitation incididunt ullamco laboris. Aute consectetur nulla ex est qui nostrud eu Lorem incididunt minim enim ullamco consectetur. Commodo anim velit ex sunt nulla qui exercitation ullamco elit. Quis do veniam non nostrud amet aliquip do.
-
-Irure ullamco ad qui officia nisi laboris id cupidatat. Lorem ut quis proident occaecat. Veniam elit anim in laboris excepteur eiusmod do exercitation laborum commodo qui ipsum. Reprehenderit veniam velit nisi anim.
-
-Mollit aliquip consequat dolor adipisicing tempor est ullamco ea deserunt. Do enim excepteur officia minim dolore consequat dolor eu adipisicing aute. Id cupidatat commodo aute cupidatat cillum in commodo consequat tempor occaecat ea qui adipisicing.
-
-Pariatur Lorem reprehenderit ut sunt ex nulla exercitation excepteur amet esse. Mollit non ullamco esse sunt cupidatat officia in id mollit est pariatur. Ut eiusmod eiusmod in pariatur dolore. Ut mollit ipsum nostrud aute culpa qui enim voluptate. Nulla nisi fugiat aute elit enim. Duis anim tempor labore adipisicing mollit laboris fugiat deserunt mollit est do.
-
-Laboris tempor in eiusmod eiusmod non sunt qui sit. Pariatur deserunt amet et nostrud tempor qui nostrud enim nisi excepteur labore. Qui cillum excepteur exercitation incididunt ullamco laboris. Aute consectetur nulla ex est qui nostrud eu Lorem incididunt minim enim ullamco consectetur. Commodo anim velit ex sunt nulla qui exercitation ullamco elit. Quis do veniam non nostrud amet aliquip do.
-
-Irure ullamco ad qui officia nisi laboris id cupidatat. Lorem ut quis proident occaecat. Veniam elit anim in laboris excepteur eiusmod do exercitation laborum commodo qui ipsum. Reprehenderit veniam velit nisi anim.
-
-Mollit aliquip consequat dolor adipisicing tempor est ullamco ea deserunt. Do enim excepteur officia minim dolore consequat dolor eu adipisicing aute. Id cupidatat commodo aute cupidatat cillum in commodo consequat tempor occaecat ea qui adipisicing.
+The objective of *Native Bound Unbound* is to gather and creatively amplify these stories. When completed, the project will establish a well from which to inspire new forms of creative expression and advance new scholarship. Recovering these stories is especially imperative, however, for descendants, for whom this history has been quieted over the years by whispers as much as by silence, unknown perhaps but still held in an aching consciousness. In this way, the project holds the potential for transcendence and healing.

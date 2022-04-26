@@ -2,12 +2,12 @@
 {{ printf "<!-- project main.html  template -->" | safeHTML }}
 {{ end  }}
 <div class="[ wrapper ]">
-  <main class="[ center ][ stack bobo ]">
+  <main class="[ center ][ stack ]">
     {{ if (not .IsHome) }}
     {{ .Title }}
     {{ end }}
   <section  class="[ stack ]">
-      {{.Content}}
+      {{ .Content }}
   </section>
   </main>
 </div>
