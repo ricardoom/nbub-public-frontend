@@ -1,12 +1,13 @@
 baseURL = 'https://nativeboundunbound.org/'
 languageCode = 'en-us'
-title = 'Native Bound—Unbound'
+title = 'Native Bound Unbound'
 theme = 'hugOpenProps'
 copyright = 'All rights reserved Native Bound Unbound'
 
 [params]
   author = ''
   typekit = 'https://use.typekit.net/nci1ctu.css'
+  subtitle = 'Archive of the indigenous enslaved'
 
 # [menu]
 #   [[menu.main]]
