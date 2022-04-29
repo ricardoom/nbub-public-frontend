@@ -1,13 +1,18 @@
+{{ $pageContext := "interior-content" }}
+{{ if .IsHome }}
+  {{ $pageContext = "home-content" }}
+{{ end }}
+
 {{ if .Site.IsServer }}
 {{ printf "<!-- project main.html  template -->" | safeHTML }}
 {{ end  }}
-<div class="[ wrapper ]">
-  <main class="[ center ][ stack ]">
+<main class="[ wrapper ][ center  ]">
+  <div class="[ stack ]">
     {{ if (not .IsHome) }}
     {{ .Title }}
     {{ end }}
-  <section  class="[ stack ]">
+  <section  class="[ stack ][ {{ $pageContext }}  ]">
       {{ .Content }}
   </section>
-  </main>
-</div>
+  </div>
+</main>
