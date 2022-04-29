@@ -1,3 +1,3 @@
-[submodule "nbubTheme"]
-	path = nbubTheme
-	url = https://github.com/ricardoom/nbubTheme
+[submodule "hugOpenProps"]
+	path = hugOpenProps
+	url = https://github.com/ricardoom/hugOpenPropsTheme
