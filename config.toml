@@ -5,10 +5,10 @@ theme = 'hugOpenProps'
 copyright = 'All rights reserved Native Bound Unbound'
 
 [params]
-  author = ''
+  author = 'Native Bound Unbound'
   typekit = 'https://use.typekit.net/nci1ctu.css'
   subtitle = 'Archive of the indigenous enslaved'
-
+  description = 'There is no way to measure the impact of slavery upon the Indigenous people of the Americas. Yet, it is known that many millions of people were captured and bound, each life worth remembering.'
 # [menu]
 #   [[menu.main]]
 #     name = 'Home'

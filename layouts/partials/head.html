@@ -3,15 +3,19 @@
 {{ $sass := resources.Get "sass/main.scss" }}
 {{ $style := $sass | resources.ToCSS }}
 {{ $options := ( dict "targetPath" $targetPath  "outputStyle" "compressed" "enableSourceMap" true ) }}
-{{ $developmentStyle := resources.Get $sassRoot | resources.ToCSS $options }}
+{{ $devStyle := resources.Get $sassRoot | resources.ToCSS $options }}
+{{ $prodStyle := resources.Get $sassRoot | resources.ToCSS $options }}
 {{ $typekit := .Site.Params.typekit }}
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="{{ .Site.Params.author}}">
+  <meta name="description" content="{{ .Site.Params.description }}">
   <link rel="stylesheet" href="https://unpkg.com/open-props"/>
   <link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css"/>
-  <link rel="stylesheet" href="{{ $developmentStyle.Permalink }}">
+  <link rel="stylesheet" href="{{ $devStyle.RelPermalink }}">
   <link rel="stylesheet" href="{{ $typekit }}">
+  {{ $devStyle.Permalink }}
   <title>
     {{ block "title" . }}
     {{ $title := print  .Title " | " .Site.Title }}
