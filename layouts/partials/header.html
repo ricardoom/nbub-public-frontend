@@ -1,0 +1,25 @@
+{{ block "header" . }}
+{{ $titleLen := (len $.Title) }}
+{{ $firstWords := slicestr (.Site.Title) 0 12 }}
+{{ $lastWord := slicestr (.Site.Title) 12 }}
+{{ $headerContext := "interior" }}
+{{ if .IsHome }}
+  {{ $headerContext = "home" }}
+{{ end }}
+<header class="[ wrapper ][ center ][ {{ $headerContext }} ]">
+  <div class="[ center ][ stack ]">
+    <h1>
+      <span class="[ firstTitle ]">{{ $firstWords }}</span>
+      <span class="[ lasttitle ]">{{ $lastWord }}</span>
+      <span class="[ subtitle ]">{{ .Site.Params.subtitle }}</span>
+    </h1>
+    {{ if .Site.Menus.main  }}
+    <nav id="nav">
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+        {{ end }}
+    </nav>
+    {{ end }}
+  </div>
+</header>
+{{ end }}
