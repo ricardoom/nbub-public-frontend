@@ -7,19 +7,26 @@
   {{ $headerContext = "home" }}
 {{ end }}
 <header class="[ wrapper ][ center ][ {{ $headerContext }} ]">
-  <div class="[ center ][ stack ]">
-    <h1>
-      <span class="[ firstTitle ]">{{ $firstWords }}</span>
-      <span class="[ lasttitle ]">{{ $lastWord }}</span>
-      <span class="[ subtitle ]">{{ .Site.Params.subtitle }}</span>
-    </h1>
-    {{ if .Site.Menus.main  }}
+  {{ if .IsHome }}
+    {{ partial "logo-teal.html" . }}
+  {{ else }}
+  <a href="/">
+    {{ partial "logo-teal.html" . }}
+  </a>
+  {{ end }}
+  {{ if .Site.Menus.main  }}
     <nav id="nav">
         {{ range .Site.Menus.main }}
         <a href="{{ .URL | relURL }}">{{ .Name }}</a>
         {{ end }}
     </nav>
     {{ end }}
+  <div class="[ center ][ stack ]">
+    {{ partial "logo-pale-sun.html" . }}
+    <h1>
+      <span class="[ subtitle ]">{{ .Site.Params.subtitle }}</span>
+    </h1>
+    
   </div>
 </header>
 {{ end }}
