@@ -6,12 +6,13 @@
   {{ if .Site.IsServer }}
     {{ printf "<!-- project main.html  template -->" | safeHTML }}
   {{ end }}
-  <main class="[ wrapper ][ center ]">
+  <main class="[ center ]">
     <div class="[ stack ]">
       {{ if (not .IsHome) }}
       {{ .Title }}
       {{ end }}
     <section  class="[ stack ][ {{ $pageContext }}  ]">
+       {{ partial "hp-hero.html" . }}
         {{ .Content }}
     </section>
     </div>

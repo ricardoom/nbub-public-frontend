@@ -1,0 +1,26 @@
+{{ define "main" }}
+{{ $pageContext := "interior" }}
+{{ if .IsHome }}
+  {{ $pageContext = "home" }}
+{{ end }}
+{{ if .Site.IsServer }}
+{{ printf "<!-- theme main.html template -->" | safeHTML }}
+{{ end  }}
+<main class="[ wrapper ]"> <div class="[ center ][ stack ]">
+  {{ partial "logo-pale-sun.html" . }}
+  <h1>
+    <span class="[ subtitle ]">{{ .Site.Params.subtitle }}</span>
+  </h1>
+  
+</div>
+  <div class="[ stack ][ center ][ {{ $pageContext }} ]">
+    {{ .Content }}
+  <aside>
+    <h3>aside here...</h3>
+    {{ block "aside" . }}
+      <h3>default aside...</h3>
+    {{ end }}
+  </aside>
+  </div>
+</main>
+{{ end }}

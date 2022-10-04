@@ -6,27 +6,27 @@
 {{ if .IsHome }}
   {{ $headerContext = "home" }}
 {{ end }}
-<header class="[ wrapper ][ center ][ {{ $headerContext }} ]">
-  {{ if .IsHome }}
-    {{ partial "logo-teal.html" . }}
-  {{ else }}
-  <a href="/">
-    {{ partial "logo-teal.html" . }}
-  </a>
-  {{ end }}
-  {{ if .Site.Menus.main  }}
-    <nav id="nav">
-        {{ range .Site.Menus.main }}
-        <a href="{{ .URL | relURL }}">{{ .Name }}</a>
-        {{ end }}
-    </nav>
+<header class="[ wrapper ][ {{ $headerContext }} ]">
+  <div class="[ primary-logo-nav ]">
+    {{ if .IsHome }}
+      {{ partial "logo-teal.html" . }}
+    {{ else }}
+    <a href="/">
+      {{ partial "logo-teal.html" . }}
+    </a>
     {{ end }}
-  <div class="[ center ][ stack ]">
-    {{ partial "logo-pale-sun.html" . }}
-    <h1>
-      <span class="[ subtitle ]">{{ .Site.Params.subtitle }}</span>
-    </h1>
-    
+    {{ if .Site.Menus.main  }}
+      <nav id="nav">
+          {{ range .Site.Menus.main }}
+          <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+          {{ end }}
+      </nav>
+      {{ end }}
   </div>
+    <nav id="social-media" class="[ social-media ]">
+      {{ partial "social-media/insta.html" . }}
+      {{ partial "social-media/twitter.html" . }}
+      {{ partial "social-media/fb.html" . }}
+    </nav>
 </header>
 {{ end }}
