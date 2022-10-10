@@ -16,7 +16,7 @@
     </a>
     {{ end }}
     {{ if .Site.Menus.main  }}
-      <nav id="nav">
+      <nav id="nav-primary">
           {{ range .Site.Menus.main }}
           <a href="{{ .URL | relURL }}">{{ .Name }}</a>
           {{ end }}

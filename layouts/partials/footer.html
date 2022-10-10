@@ -1,0 +1,14 @@
+{{ $copyrights := .Site.Copyright | safeHTML  }}
+{{ $author := .Site.Params.author }}
+<footer class="[ wrapper ][ center ]">
+  <img class="[ decor ]" src="https://res.cloudinary.com/toupeeproofbullets/image/upload/t_hp_portfolio/v1665417542/native%20bound%20unbound/Codex_Mendoza_crop_1x1.jpg" alt="" />
+  <nav id="nav-footer">
+    {{ range .Site.Menus.main }}
+    <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+    {{ end }}
+  </nav>
+  <div class="[ stack ]">
+    {{ partial "logo-teal.html" . }}
+    <p>&copy; {{ now.Year }} {{ $copyrights }} </p>
+  </div>
+</footer>
