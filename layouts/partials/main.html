@@ -6,18 +6,17 @@
   {{ if .Site.IsServer }}
     {{ printf "<!-- project main.html  template -->" | safeHTML }}
   {{ end }}
-  <main class="[ center ]">
+  <main class="[ center ][ home ]">
     <div class="[ stack ]">
       {{ if (not .IsHome) }}
       {{ .Title }}
       {{ end }}
     <section  class="[ stack ][ {{ $pageContext }}  ]">
-       {{ partial "hp-hero.html" . }}
-       {{ partial "logo-pale-sun.html" . }}
-       <h1>
-        <span class="[ subtitle ]">{{ .Site.Params.subtitle }}</span>
-      </h1>
+      <div class="[ inner-grid ]">
+        {{ partial "hp-hero.html" . }}
+        {{ partial "mast.html" . }}
         {{ .Content }}
+      </div>
     </section>
     </div>
   </main>
