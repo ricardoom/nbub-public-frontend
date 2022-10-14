@@ -16,14 +16,14 @@
     </a>
     {{ end }}
     {{ if .Site.Menus.main  }}
-      <nav id="nav-primary">
+      <nav id="nav-primary" class="[ nav-primary ]">
           {{ range .Site.Menus.main }}
           <a href="{{ .URL | relURL }}">{{ .Name }}</a>
           {{ end }}
       </nav>
       {{ end }}
   </div>
-    <nav id="social-media" class="[ social-media ]">
+    <nav id="social-media" class="[ nav-social-media ]">
       {{ partial "social-media/insta.html" . }}
       {{ partial "social-media/twitter.html" . }}
       {{ partial "social-media/fb.html" . }}
