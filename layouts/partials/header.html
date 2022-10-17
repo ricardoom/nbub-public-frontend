@@ -25,13 +25,11 @@
   </div>
     <nav id="social-media" class="[ nav-social-media ]">
 
-      <a href="{{ .Site.Params.instagram }}">{{ partial "social-media/insta.html" . }}</a>
+      <a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener noreferrer">{{ partial "social-media/insta.html" . }}</a>
       
-      <a href="{{ .Site.Params.twitter }}">{{ partial "social-media/twitter.html" . }}</a>
+      <a href="{{ .Site.Params.twitter }}" target="_blank" rel="noopener noreferrer">{{ partial "social-media/twitter.html" . }}</a>
 
-      <a href="{{ .Site.Params.fb }}">{{ partial "social-media/fb.html" . }}</a>
+      <a href="{{ .Site.Params.fb }}" target="_blank" rel="noopener noreferrer">{{ partial "social-media/fb.html" . }}</a>
     </nav>
 </header>
 {{ end }}
-
-
