@@ -1,4 +1,6 @@
+
 {{ block "main" . }}
+  {{ $mainContent := partial "first-paragraph.html" .Content }}
   {{ $pageContext := "interior-content" }}
   {{ if .IsHome }}
     {{ $pageContext = "home-content" }}
@@ -15,7 +17,8 @@
       <div class="[ stack ][ inner-grid ]">
         {{/*  {{ partial "hp-hero.html" . }}  */}}
         {{ partial "mast.html" . }}
-        {{ .Content }}
+        {{ partial "first-paragraph.html" }}
+        {{ $mainContent | safeHTML }}
       </div>
     </section>
     </div>
