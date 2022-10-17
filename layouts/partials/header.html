@@ -24,9 +24,14 @@
       {{ end }}
   </div>
     <nav id="social-media" class="[ nav-social-media ]">
-      {{ partial "social-media/insta.html" . }}
-      {{ partial "social-media/twitter.html" . }}
-      {{ partial "social-media/fb.html" . }}
+
+      <a href="{{ .Site.Params.instagram }}">{{ partial "social-media/insta.html" . }}</a>
+      
+      <a href="{{ .Site.Params.twitter }}">{{ partial "social-media/twitter.html" . }}</a>
+
+      <a href="{{ .Site.Params.fb }}">{{ partial "social-media/fb.html" . }}</a>
     </nav>
 </header>
 {{ end }}
+
+
