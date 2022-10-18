@@ -1,0 +1,35 @@
+{{ block "header" . }}
+{{ $titleLen := (len $.Title) }}
+{{ $firstWords := slicestr (.Site.Title) 0 12 }}
+{{ $lastWord := slicestr (.Site.Title) 12 }}
+{{ $headerContext := "interior" }}
+{{ if .IsHome }}
+  {{ $headerContext = "home" }}
+{{ end }}
+<header class="[ wrapper ][ {{ $headerContext }} ]">
+  <div class="[ primary-logo-nav ]">
+    {{ if .IsHome }}
+      {{ partial "logo-teal.html" . }}
+    {{ else }}
+    <a href="/">
+      {{ partial "logo-teal.html" . }}
+    </a>
+    {{ end }}
+    {{ if .Site.Menus.main  }}
+      <nav id="nav-primary" class="[ nav-primary ]">
+          {{ range .Site.Menus.main }}
+          <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+          {{ end }}
+      </nav>
+      {{ end }}
+  </div>
+    <nav id="social-media" class="[ nav-social-media ]">
+
+      <a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener noreferrer">{{ partial "social-media/insta.html" . }}</a>
+      
+      <a href="{{ .Site.Params.twitter }}" target="_blank" rel="noopener noreferrer">{{ partial "social-media/twitter.html" . }}</a>
+
+      <a href="{{ .Site.Params.fb }}" target="_blank" rel="noopener noreferrer">{{ partial "social-media/fb.html" . }}</a>
+    </nav>
+</header>
+{{ end }}

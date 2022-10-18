@@ -1,0 +1,16 @@
+{{ $copyrights := .Site.Copyright | safeHTML  }}
+{{ $author := .Site.Params.author }}
+<footer class="[ wrapper ][ center stack ]">
+  <div>
+    <img class="[ decor ]" src="https://res.cloudinary.com/toupeeproofbullets/image/upload/t_hp_portfolio/v1665417542/native%20bound%20unbound/Codex_Mendoza_crop_1x1.jpg" alt="" />
+    <nav class="nav-footer">
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+  </div>
+  <div class="[ colophon ]">
+    {{ partial "kinetic-logo.html" . }}
+    <p>&copy; {{ now.Year }} {{ $copyrights }} </p>
+  </div>
+</footer>
