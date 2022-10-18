@@ -1,4 +1,6 @@
+
 {{ block "main" . }}
+  {{ $mainContent := partial "first-paragraph.html" .Content }}
   {{ $pageContext := "interior-content" }}
   {{ if .IsHome }}
     {{ $pageContext = "home-content" }}
@@ -6,13 +8,18 @@
   {{ if .Site.IsServer }}
     {{ printf "<!-- project main.html  template -->" | safeHTML }}
   {{ end }}
-  <main class="[ wrapper ][ center ]">
+  <main class="[ center ][ home ]">
     <div class="[ stack ]">
       {{ if (not .IsHome) }}
       {{ .Title }}
       {{ end }}
     <section  class="[ stack ][ {{ $pageContext }}  ]">
-        {{ .Content }}
+      <div class="[ stack ][ inner-grid ]">
+        {{/*  {{ partial "hp-hero.html" . }}  */}}
+        {{ partial "mast.html" . }}
+        {{ partial "first-paragraph.html" }}
+        {{ $mainContent | safeHTML }}
+      </div>
     </section>
     </div>
   </main>

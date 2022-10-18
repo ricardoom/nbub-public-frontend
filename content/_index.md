@@ -1,7 +1,6 @@
 ---
 title: 'Native Bound Unbound Home'
 draft: false
-
 ---
 There is no way to measure the impact of slavery upon the Indigenous people of the Americas. Yet, it is known that many millions of people were captured and bound, each life worth remembering. While the practice predated the arrival of Europeans in the Americas, and would continue across tribal communities for centuries, Indigenous slavery expanded in unimaginable ways following the arrival of Columbus in 1492.
 
