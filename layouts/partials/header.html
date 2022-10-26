@@ -9,10 +9,10 @@
 <header class="[ wrapper ][ {{ $headerContext }} ]">
   <div class="[ primary-logo-nav ]">
     {{ if .IsHome }}
-      {{ partial "logo-teal.html" . }}
+      {{ partial "logo.html" . }}
     {{ else }}
     <a href="/">
-      {{ partial "logo-teal.html" . }}
+      {{ partial "logo.html" . }}
     </a>
     {{ end }}
     {{ if .Site.Menus.main  }}
