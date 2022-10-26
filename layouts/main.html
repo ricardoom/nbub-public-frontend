@@ -6,7 +6,8 @@
 {{ if .Site.IsServer }}
 {{ printf "<!-- theme main.html template -->" | safeHTML }}
 {{ end  }}
-<main class="[ wrapper ]"> <div class="[ center ][ stack ]">
+<main class="[ wrapper ]"> 
+  <div class="[ center ][ stack ]">
   {{ partial "logo-pale-sun.html" . }}
   <h1>
     <span class="[ subtitle ]">{{ .Site.Params.subtitle }}</span>
