@@ -8,13 +8,25 @@
 {{ end }}
 <header class="[ wrapper ][ {{ $headerContext }} ]">
   <div class="[ primary-logo-nav ]">
-    {{ if .IsHome }}
-      {{ partial "logo.html" . }}
-    {{ else }}
-    <a href="/">
-      {{ partial "logo.html" . }}
-    </a>
-    {{ end }}
+    <div class="[ logo-dark ]">
+      {{ if .IsHome }}
+         {{/*  TODO: Change this file name to indicate the correct logo version  */}}
+        {{ partial "logo-primary-knockout.html" . }}
+      {{ else }}
+      <a href="/">
+        {{ partial "logo-primary-knockout.html" . }}
+      </a>
+      {{ end }}
+    </div>
+    <div class="[ logo-light ]">
+      {{ if .IsHome }}
+        {{ partial "logo-primary-solid.html" . }}
+      {{ else }}
+      <a href="/">
+        {{ partial "logo-primary-solid.html" . }}
+      </a>
+      {{ end }}
+    </div>
     {{ if .Site.Menus.main  }}
       <nav id="nav-primary" class="[ nav-primary ]">
           {{ range .Site.Menus.main }}
