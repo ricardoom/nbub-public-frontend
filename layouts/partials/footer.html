@@ -1,6 +1,6 @@
 {{ $copyrights := .Site.Copyright | safeHTML  }}
 {{ $author := .Site.Params.author }}
-<footer class="[ wrapper ][ center stack ]">
+<footer class="[ wrapper ][ center stack footer ]">
   <div>
     <img class="[ decor ]" src="https://res.cloudinary.com/toupeeproofbullets/image/upload/t_hp_portfolio/v1665417542/native%20bound%20unbound/Codex_Mendoza_crop_1x1.jpg" alt="" />
     <nav class="nav-footer">
@@ -10,7 +10,8 @@
     </nav>
   </div>
   <div class="[ colophon ]">
-    {{ partial "kinetic-logo.html" . }}
+    {{ partial "logo-kinetic-solid.html" . }}
+    {{ partial "logo-kinetic-knockout.html" . }}
     <p>&copy; {{ now.Year }} {{ $copyrights }} </p>
   </div>
 </footer>

@@ -84,10 +84,10 @@
         }
       }
     },
-    "raw sienna": {
+    "burnt sienna": {
       "description": "",
       "type": "color",
-      "value": "#945c31ff",
+      "value": "#772f0fff",
       "blendMode": "normal",
       "extensions": {
         "org.lukasoppermann.figmaDesignTokens": {
@@ -96,7 +96,7 @@
         }
       }
     },
-    "burnt sienna": {
+    "raw sienna": {
       "description": "",
       "type": "color",
       "value": "#9d4e23ff",
@@ -280,18 +280,6 @@
         "extensions": {
           "org.lukasoppermann.figmaDesignTokens": {
             "styleId": "S:bc0b48f553fc6e436f00a5c16b3d0a6239994be8,",
-            "exportKey": "color"
-          }
-        }
-      },
-      "dark gray": {
-        "description": "",
-        "type": "color",
-        "value": "#585d64ff",
-        "blendMode": "normal",
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "styleId": "S:a18b69a5da7acd24bee145b7c55f331b7b9cdcf2,",
             "exportKey": "color"
           }
         }
@@ -1248,8 +1236,8 @@
               "value": {
                 "fontSize": 8.866023063659668,
                 "textDecoration": "none",
-                "fontFamily": "Lapture Caption",
-                "fontWeight": 600,
+                "fontFamily": "Gomme Sans",
+                "fontWeight": 400,
                 "fontStyle": "normal",
                 "fontStretch": "normal",
                 "letterSpacing": 0,
@@ -3314,11 +3302,11 @@
               },
               "fontFamily": {
                 "type": "string",
-                "value": "Lapture Caption"
+                "value": "Gomme Sans"
               },
               "fontWeight": {
                 "type": "number",
-                "value": 600
+                "value": 400
               },
               "fontStyle": {
                 "type": "string",
