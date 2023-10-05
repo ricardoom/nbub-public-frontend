@@ -18,15 +18,6 @@
       </a>
       {{ end }}
     </div>
-    <div class="[ logo-light ]">
-      {{ if .IsHome }}
-        {{ partial "logo-primary-solid.html" . }}
-      {{ else }}
-      <a href="/">
-        {{ partial "logo-primary-solid.html" . }}
-      </a>
-      {{ end }}
-    </div>
     {{ if .Site.Menus.main  }}
       <nav id="nav-primary" class="[ nav-primary ]">
           {{ range .Site.Menus.main }}
@@ -38,7 +29,7 @@
     <nav id="social-media" class="[ nav-social-media ]">
 
       <a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener noreferrer">{{ partial "social-media/insta.html" . }}</a>
-      
+
       <a href="{{ .Site.Params.twitter }}" target="_blank" rel="noopener noreferrer">{{ partial "social-media/twitter.html" . }}</a>
 
       <a href="{{ .Site.Params.fb }}" target="_blank" rel="noopener noreferrer">{{ partial "social-media/fb.html" . }}</a>
