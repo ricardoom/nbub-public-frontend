@@ -10,4 +10,4 @@ The objective of Native Bound-Unbound is to create a centralized digital reposi
 
 Recovering these stories is especially critical, however, for descendants, for whom this history has been quieted over the years by whispers as much as by silence, unknown perhaps but still held in an aching consciousness. In this way, the project holds the potential for transcendence and healing.
 
-Full site coming in 2024.
+Full site coming in 2025.
